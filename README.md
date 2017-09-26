@@ -1,22 +1,20 @@
-## ຍິນດີຕ້ອນຮັບສຸ່ tinyclass by nirankoon
+## ພື້ນຖານ DOCKER ກັບ NGINX, PHP, MySQL & phpMyAdmin
 
 ຮຽນພື້ນຖານການສ້າງລະບົບຈັດການເວັບດ້ວຍ Docker [ຮຽນ ຟຣີ] ກັບ ນິຣັນກຸນ ສິງປຣະເສີດ
 ຜູ້ຮຽນຈະໄດ້ສຳພັດການຮຽນກັບເຊີເວີ ເວັບໄຊທ໌ໂຕແທ້ ເທິງ internet ບໍ່ມີການຈຳລອງສະຖານະການໃດ໋ໆທັງນັ້ນ
 
 ### ສິ່ງທີ່ຈະໄດ້ຮຽນ:
 1. ການຕິດຕັ້ງ Docker CE
-2. ການຕິດຕັ້ງ service (ເວັບເຊີເວີ Nginx, ພາສາ PHP, ຖານຂໍ້ມູນ MySQL ແລະ ຕົວບໍລິຫານຖານຂໍ້ມູນ PhpMyAdmin)
-3. ການສ້າງ Container ທັງ 4 Services (Nginx, PHP, MySQL, PhpMyAdmin)
-4. ການເຊື່ອມໂຍງ ລະຫວ່າງ Container ກັບ Container ເພື່ອໃຫ້ລະບົບເຮັດວຽກນຳກັນ
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```
+2. ການຕິດຕັ້ງ service (ເວັບເຊີເວີ NGINX, ພາສາ PHP, ຖານຂໍ້ມູນ MySQL ແລະ ຕົວບໍລິຫານຖານຂໍ້ມູນ phpMyAdmin)
+3. ການສ້າງ Container ທັງ 4 Services (NGINX, PHP, MySQL, phpMyAdmin)
+4. - [x] ການເຊື່ອມໂຍງ ລະຫວ່າງ Container ກັບ Container ເພື່ອໃຫ້ລະບົບເຮັດວຽກນຳກັນ
+
+### ສິ່ງທີ່ບໍ່ໄດ້ສອນ:
+1. ~~ສອນການຂຽນເວັບ PHP, MySQL ຫຼື phpMyAdmin~~
+2. ~~ສອນການສ້າງເວັບໄຊທ໌ ຫຼື ໜ້າເວັບ~~
+
 ### ສິ່ງທີ່ຜູ້ຮຽນຕ້ອງກຽມ:
-* ເຂົ້າໄປອ່ານຫລື ດາວໂຫຼດ Materials ປະກອບກ່ອນ [ກ່ອນຮອດມື້ຮຽນ1ວັນຈະເປີດໃຫ້ດາວໂຫຼດ]
+* ເຂົ້າໄປອ່ານຫຼື ດາວໂຫຼດ Materials ປະກອບກ່ອນ [ກ່ອນຮອດມື້ຮຽນ1ວັນຈະເປີດໃຫ້ດາວໂຫຼດ]
 * ເບິ່ງແຜນທີ່ ທາງໄປສະຖານທີ່ຮຽນ ບ້ານຕານມີໄຊ ທາງໄປຕົ້ນຄູນ [ຈະບອກລະອຽດນຳຫຼັງ]
 * ຄອມໂນດບຸກຕົນເອງ ຫລື ຈະໃຊ້ Smartphones/iPad ກາໄດ້ [ຖ້າບໍ່ມີບອກກ່ອນຈະຕຽມໃຫ້]
 * ປື້ມສໍປາກາ ແລ້ວແຕ່ຈະກ່ຽມມາ
@@ -28,9 +26,9 @@ function fancyAlert(arg) {
 * ໄດ້ເຂົ້າກຸ່ມ fb ແລກປ່ຽນຄວາມຮູ້ກ່ຽວກັບເວັບ
 * ໄດ້ໝູ່ໃໝ່, ໃດ້ຮູ້ຈັກກັບ ຜູ້ສອນ [ປະສົບການ 10 ປີ ທີ່ໃຫ້ຄຳແນະນຳປຶກສາໃດ້]
 
-`ຊຸດທີ 1 ເລີ່ມຮຽນ: ວັນສຸກ ທີ 29 ເດືອນ 9 ເວລາ 4:30pm - 6:00pm`
-`ໄລຍະເວລາຮຽນ: ບໍ່ເກີນ 2 ຊົ່ວໂມງຈົບເອົາໄປນຳໃຊ້ໄດ້ເລີຍ`
-`ຮັບບໍ່ເກີນ 5 ຄົນຕໍ່ຊຸດ`
+> ຊຸດທີ 1 ເລີ່ມຮຽນ: ວັນສຸກ ທີ 29 ເດືອນ 9 ເວລາ 4:30pm - 6:00pm
+> ໄລຍະເວລາຮຽນ: ບໍ່ເກີນ 2 ຊົ່ວໂມງຈົບເອົາໄປນຳໃຊ້ໄດ້ເລີຍ
+> ຮັບບໍ່ເກີນ 5 ຄົນຕໍ່ຊຸດ
 
 ### ເໝາະສຳລັບ: 
 * ນັກຮຽນ/ນັກສຶກສາ ທີ່ກຳລັງຮຽນຂຽນເວັບໄຊທ໌ 
@@ -42,38 +40,6 @@ function fancyAlert(arg) {
 
 Share ບອກຕໍ່ກັບຄົນທີ່ສົນໃຈໃຫ້ແນ່ເດີ ຂອບໃຈ
 
-You can use the [editor on GitHub](https://github.com/nirankoon/tinyclass/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nirankoon/tinyclass/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ມີຫຍັງບໍ່ເຂົ້າໃຈ ອິນບອກ http://fb.com/nirankoon.singpraseuth 
+```
