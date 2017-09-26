@@ -7,7 +7,7 @@
 1. ການຕິດຕັ້ງ Docker CE
 2. ການຕິດຕັ້ງ service (ເວັບເຊີເວີ NGINX, ພາສາ PHP, ຖານຂໍ້ມູນ MySQL ແລະ ຕົວບໍລິຫານຖານຂໍ້ມູນ phpMyAdmin)
 3. ການສ້າງ Container ທັງ 4 Services (NGINX, PHP, MySQL, phpMyAdmin)
-4. - [x] ການເຊື່ອມໂຍງ ລະຫວ່າງ Container ກັບ Container ເພື່ອໃຫ້ລະບົບເຮັດວຽກນຳກັນ
+4. ການເຊື່ອມໂຍງ ລະຫວ່າງ Container ກັບ Container ເພື່ອໃຫ້ລະບົບເຮັດວຽກນຳກັນ
 
 ### ສິ່ງທີ່ບໍ່ໄດ້ສອນ:
 1. ~~ສອນການຂຽນເວັບ PHP, MySQL ຫຼື phpMyAdmin~~
